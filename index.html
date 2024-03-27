@@ -2,12 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Call App</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Web Call App Proof of Concept :)</h1>
+    <div id="app">
+      <h3>Local Stream</h3>
+      <video id="localVideo" autoplay playsinline></video>
+
+      <h3>Remote Stream</h3>
+      <video id="remoteVideo" autoplay playsinline></div>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
