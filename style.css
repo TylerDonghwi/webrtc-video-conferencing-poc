@@ -1,8 +1,13 @@
 video {
   width: 40vw;
-  height: 30vw;
-  margin: 2rem;
+  aspect-ratio: 16/9;
+  margin-left: 1rem;
+  margin-right: 1rem;
   background: #2c3e50;
+}
+
+h3 {
+  text-align: center;
 }
 
 .videos {
