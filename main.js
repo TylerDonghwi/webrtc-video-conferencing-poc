@@ -53,8 +53,16 @@ webcamButton.onclick = async () => {
   }
 };
 
-callButton.onclick = () => {
-  console.log("callButton clicked");
+callButton.onclick = async () => {
+  const offerDescription = await pc.createOffer();
+  await pc.setLocalDescription(offerDescription);
+
+  const offer = {
+    type: offerDescription.type,
+    sdp: offerDescription.sdp,
+  };
+
+  console.log("callButton clicked", offer);
 };
 
 answerButton.onclick = () => {
